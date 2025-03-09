@@ -10,6 +10,11 @@
       "standard"
     ]
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "author": "gideaof43",
   "license": "ISC",
   "description": "",
