@@ -7,6 +7,8 @@
   },
   "author": "gideaof43",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "standard": "^17.1.2"
+  }
 }
-
