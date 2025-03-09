@@ -5,10 +5,17 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "lint-staged": {
+    "*.ts": [
+      "standard"
+    ]
+  },
   "author": "gideaof43",
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^15.4.3",
     "standard": "^17.1.2"
   }
 }
