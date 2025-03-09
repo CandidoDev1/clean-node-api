@@ -16,6 +16,9 @@
       "pre-commit": "lint-staged"
     }
   },
+  "standard":{
+    "env": ["jest"]
+  },
   "author": "gideaof43",
   "license": "ISC",
   "description": "",
