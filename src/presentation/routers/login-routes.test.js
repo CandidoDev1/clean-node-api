@@ -1,5 +1,5 @@
-import { LoginRouter } from '../routers'
-import { MissingParamError } from '../helpers/missing-param-error'
+const LoginRouter = require('./login-router')
+const MissingParamError = require('../helpers/missing-param-error')
 
 describe('Login Router', () => {
   test('should return 400 if no emails is provided', () => {

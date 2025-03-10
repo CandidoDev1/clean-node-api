@@ -1,6 +1,6 @@
-import { MissingParamError } from './missing-param-error'
+const MissingParamError = require('../helpers/missing-param-error')
 
-export default class HttpReponse {
+module.exports = class HttpReponse {
   static badRequest (paramName) {
     return {
       statusCode: 400,

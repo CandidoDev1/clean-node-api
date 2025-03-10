@@ -1,5 +1,6 @@
-import { HttpReponse } from '../helpers/http-response'
-export default class LoginRouter {
+const HttpReponse = require('../helpers/http-response')
+
+module.exports = class LoginRouter {
   route (httpRequest) {
     if (!httpRequest || !httpRequest.Body) {
       return HttpReponse.serverError()
