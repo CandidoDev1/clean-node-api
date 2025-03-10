@@ -1,5 +1,6 @@
 const LoginRouter = require('./login-router')
 const MissingParamError = require('../helpers/missing-param-error')
+const ServerError = require('../helpers/missing-param-error')
 
 describe('Login Router', () => {
   test('should return 400 if no emails is provided', () => {
@@ -37,5 +38,6 @@ describe('Login Router', () => {
     const sut = new LoginRouter()
     const httpReponse = sut.route({})
     expect(httpReponse.statusCode).toBe(500)
+    expect(httpReponse.body).toEqual(new ServerError())
   })
 })
